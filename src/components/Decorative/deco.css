@@ -1,0 +1,207 @@
+.decoContainer {
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
+
+.deco1Container {
+	position: absolute;
+	top: 20%;
+	left: 15%;
+	width: 200px;
+	opacity: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.deco2Container {
+	position: absolute;
+	top: 60%;
+	right: 20%;
+	width: 200px;
+	z-index: -1;
+	opacity: 0;
+	pointer-events: none;
+}
+.deco3Container {
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	width: 700px;
+	transform: translate(-350px, -350px);
+	z-index: -1;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.deco4Container {
+	position: absolute;
+	left: 5%;
+	top: 40%;
+	width: 300px;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.deco5Container {
+	position: absolute;
+	right: 5%;
+	top: 45%;
+	width: 250px;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.deco1 {
+	animation: 10s flower-spin linear infinite forwards;
+	filter: blur(5px);
+}
+
+.deco2 {
+	animation: 10s flower-spin linear infinite reverse;
+	filter: blur(2px);
+}
+
+.deco3 {
+	width: 100%;
+	animation: 20s rotate-psyc linear infinite;
+	animation-direction: forwards;
+	filter: blur(1px);
+}
+.deco4 {
+	width: 100%;
+	filter: blur(3px);
+	animation: 10s guitar-rock linear infinite forwards;
+}
+.deco5 {
+	width: 100%;
+	filter: blur(3px);
+	animation: 7s love-rock linear infinite forwards;
+}
+
+@keyframes rotate-psyc {
+	0% {
+	}
+	50% {
+		transform: rotate(180deg) scale(1.1);
+	}
+	100% {
+		transform: rotate(350deg) scale(1);
+	}
+}
+
+.visibleDeco {
+	opacity: 0.5;
+}
+
+@keyframes flower-spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-180deg) translateX(-40px);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes guitar-rock {
+	0% {
+		transform: rotate(-10deg) translateX(-40px);
+	}
+	30% {
+		transform: rotate(10deg) translateX(40px);
+	}
+	60% {
+		transform: rotate(-10deg) translateX(-40px);
+	}
+	80% {
+		transform: rotate(10deg) translateX(40px);
+	}
+	100% {
+		transform: rotate(-10deg) translateX(-40px);
+	}
+}
+
+@keyframes love-rock {
+	0% {
+		transform: rotate(-5deg) translateX(-30px);
+	}
+	30% {
+		transform: rotate(5deg) translateX(30px);
+	}
+	60% {
+		transform: rotate(-7deg) translateX(-30px);
+	}
+	80% {
+		transform: rotate(7deg) translateX(30px);
+	}
+	100% {
+		transform: rotate(-5deg) translateX(-30px);
+	}
+}
+
+.deco6Container {
+	width: 100px;
+	height: 100px;
+	z-index: 10;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	transition: 1s ease;
+	opacity: 0;
+	margin-bottom: 50p;
+}
+
+.visibleTouchIcon {
+	opacity: 1;
+}
+
+.smallTouchIcon {
+	width: 30px;
+	height: 30px;
+}
+
+.touchicon-1 {
+	fill: none;
+}
+.touchicon-2 {
+	clip-path: url(#clip-path);
+}
+.touchicon-3 {
+	clip-path: url(#clip-path-2);
+}
+.touchicon-4 {
+	clip-path: url(#clip-path-4);
+}
+.touchicon-5 {
+	fill: #bdbbbc;
+	animation: 1s tap-animation linear infinite;
+}
+.touchicon-6 {
+	clip-path: url(#clip-path-5);
+}
+.touchicon-7 {
+	clip-path: url(#clip-path-9);
+}
+.touchicon-8 {
+	fill: #2b3953;
+}
+.touchicon-9 {
+	clip-path: url(#clip-path-13);
+}
+.touchicon-10 {
+	fill: #fff;
+}
+
+@keyframes tap-animation {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

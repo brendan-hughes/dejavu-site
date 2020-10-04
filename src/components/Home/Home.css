@@ -1,0 +1,816 @@
+/* Saffron rgba(193,103,88,1)
+Magnolia rgba(246,207,122,1)
+Shale rgba(152,173,177,1)
+Hollyhock Pink rgba(204,151,157,1) 
+Sandstone rgba(233,217,178,1)
+Burgundy rgba(96,76,81,1)*/
+
+.homeSection {
+	height: 250vh;
+	width: 100vw;
+	display: flex;
+	position: absolute;
+	z-index: 2;
+}
+.homeBackground {
+	height: 100%;
+	width: 100%;
+	background-image: url('../../assets/dejavubackground.jpg');
+	background-size: cover;
+	opacity: 1;
+	position: fixed;
+	transition: 2s ease;
+	margin: 0px;
+}
+
+.trippyBackground {
+	opacity: 0.3;
+}
+
+@keyframes trippy-background {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+.headerContainer {
+	margin: 0px auto auto;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	z-index: 10;
+}
+
+.dejaVuHeader {
+	font-family: 'Lobster', cursive;
+	margin: auto auto 0px;
+	letter-spacing: 2px;
+	color: rgb(247, 241, 229);
+	font-size: 100px;
+	transition: 0.5s ease;
+	text-shadow: -4px 4px 0px rgba(96, 76, 81, 1), 4px 4px 0px rgba(96, 76, 81, 1),
+		-10px 10px 0px rgba(193, 103, 88, 1), 10px 10px 0px rgba(193, 103, 88, 1),
+		-14px 14px 0px rgba(246, 207, 122, 1), 14px 14px 0px rgba(246, 207, 122, 1);
+}
+.dejaVuHeaderTrippy {
+	color: white;
+	text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+		-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+		10px 10px 0px #ff9de6;
+	animation: 5s headerrainbowtextshadow alternate infinite;
+}
+
+@keyframes headerrainbowtextshadow {
+	0% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230);
+	}
+	8% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230);
+	}
+	16% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230);
+	}
+	25% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230);
+	}
+	33% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230);
+	}
+	41% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230);
+	}
+	50% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230);
+	}
+	58% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230);
+	}
+	66% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230);
+	}
+	75% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(147, 245, 108),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			-3px -3px 14px rgb(147, 245, 108);
+	}
+	83% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(147, 245, 108),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			-3px -3px 14px rgb(147, 245, 108);
+	}
+	91% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(147, 245, 108),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			-3px -3px 14px rgb(147, 245, 108);
+	}
+	100% {
+		text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+			-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+			10px 10px 0px #ff9de6, 1px 1px 8px #ff9de6,
+			2px 2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(147, 245, 108),
+			-1px -1px 8px #ff9de6, -2px -2px 11px rgb(188, 255, 197),
+			-3px -3px 14px rgb(147, 245, 108);
+	}
+}
+
+.dejaVuHeader:hover {
+	cursor: pointer;
+}
+
+.dejaVuTaglineContainer {
+	display: flex;
+	margin: 10px auto auto;
+	flex-direction: row;
+}
+.dejaVuTagline {
+	color: rgba(204, 151, 157, 1);
+	font-family: 'Shrikhand', cursive;
+	margin: 25px 5px auto;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-shadow: -1px 2px 3px rgb(66, 71, 71), 1px 2px 3px rgb(78, 78, 78);
+	transition: 0.5s ease;
+}
+
+.dejaVuTaglineTrippy {
+	color: rgb(255, 255, 255);
+}
+
+.dejaVuTagline:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	transform: translateY(-2px);
+	text-shadow: -1px 2px 3px rgb(80, 101, 105), 1px 2px 3px rgb(80, 101, 105),
+		0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.artContainer {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+}
+
+.heroArt {
+	width: 400px;
+	position: absolute;
+	opacity: 0.7;
+	top: 80vh;
+	left: 50vw;
+	transform: translateX(-200px);
+}
+
+.heroArt2 {
+	width: 400px;
+	position: absolute;
+	opacity: 0.7;
+	top: 25vh;
+	right: -220px;
+}
+
+.heroArt3 {
+	width: 400px;
+	position: absolute;
+	opacity: 0.7;
+	top: 25vh;
+	left: -220px;
+}
+
+.heroArt4 {
+	width: 400px;
+	position: absolute;
+	opacity: 0.7;
+	bottom: 75vh;
+	right: -220px;
+}
+
+.heroArt5 {
+	width: 400px;
+	position: absolute;
+	opacity: 0.7;
+	bottom: 75vh;
+	left: -220px;
+}
+
+.blueCircleContainer {
+	bottom: -100px;
+	right: -20px;
+	width: 250px;
+	position: fixed;
+	z-index: 10;
+	transition: 0.2s ease;
+	animation: 7s record-rotate linear infinite forwards;
+	overflow: hidden;
+}
+
+.blueCircleContainer:hover {
+	cursor: pointer;
+	animation-play-state: paused;
+}
+
+.ctaContainer {
+	z-index: 10;
+	overflow: hidden;
+}
+
+@keyframes record-rotate {
+	0% {
+		transform: rotate(0deg) translate(0px, 0px);
+	}
+	50% {
+		transform: rotate(180deg) translate(5px, 5px);
+	}
+	100% {
+		transform: rotate(360deg) translate(0px, 0px);
+	}
+}
+
+.st0 {
+	fill: #1e1717;
+}
+.st1 {
+	fill: #ffffff;
+}
+.st2 {
+	fill: none;
+}
+.st3 {
+	fill: #382d2d;
+}
+.st4 {
+	fill: #261e1e;
+}
+.st5 {
+	font-family: 'MyriadPro-Regular';
+}
+.st6 {
+	font-size: 12px;
+}
+.st7 {
+	fill: #f1f1f1;
+}
+.redcircle-1 {
+	fill: #c66;
+	stroke: #c66;
+	animation: 1s ease-in fade-in 0s 1 forwards, 5s grow-slow 0.6s linear infinite;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.redcircle-1,
+.redcircle-2,
+.redcircle-3 {
+	stroke-miterlimit: 10;
+	stroke-width: 20px;
+	transition: 1s ease;
+	opacity: 0;
+}
+.redcircle-2 {
+	fill: #fc6;
+	stroke: #fc6;
+	animation: 1s ease-in fade-in 1s 1 forwards, 5s grow-slow 0.3s linear infinite;
+}
+.redcircle-3 {
+	fill: #f6efe2;
+	stroke: #f6efe2;
+	animation: 1s ease-in fade-in 2s 1 forwards, 5s grow-slow linear infinite;
+}
+
+.trippyCircle1 {
+	fill: #ff9de6;
+	stroke: #ff9de6;
+	animation: 1s ease-in fade-in 0s 1 forwards, 5s grow-slow 0.6s linear infinite,
+		10s trippy-circle linear infinite;
+	animation-direction: forwards;
+}
+.trippyCircle2 {
+	fill: #e8e500;
+	stroke: #e8e500;
+}
+.trippyCircle3 {
+	fill: #00d9ff;
+	stroke: #00d9ff;
+}
+
+@keyframes trippy-circle {
+	0% {
+		transform: skew(0deg);
+	}
+	25% {
+		transform: skew(2deg, -2deg);
+	}
+	50% {
+		transform: skew(2deg, 2deg);
+	}
+	75% {
+		transform: skew(-2deg, 2deg);
+	}
+	100% {
+		transform: skew(0deg);
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes grow-slow {
+	0% {
+		stroke-width: 20px;
+	}
+	70% {
+		stroke-width: 20px;
+	}
+	85% {
+		stroke-width: 35px;
+	}
+	100% {
+		stroke-width: 20px;
+	}
+}
+
+.takeATripTrigger {
+	position: absolute;
+	top: 160vh;
+	height: 50vh;
+	width: calc(100vw);
+	display: flex;
+}
+
+.takeATripTextContainer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.takeATripTriggerText {
+	color: white;
+	font-family: 'Shrikhand', cursive;
+	margin: auto;
+	letter-spacing: 2px;
+	color: rgb(247, 241, 229);
+	font-size: 7vw;
+	transition: 0.3s ease;
+	text-shadow: -4px 4px 0px rgba(96, 76, 81, 1), 4px 4px 0px rgba(96, 76, 81, 1),
+		-10px 10px 0px rgba(193, 103, 88, 1), 10px 10px 0px rgba(193, 103, 88, 1),
+		-14px 14px 0px rgba(246, 207, 122, 1), 14px 14px 0px rgba(246, 207, 122, 1);
+}
+
+.trippyTriggerText {
+	color: white;
+	text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+		-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+		10px 10px 0px #ff9de6;
+	animation: 5s headerrainbowtextshadow alternate infinite;
+}
+
+.takeATripTriggerImage {
+	width: 70%;
+	height: 70%;
+	margin: auto;
+	transition: 0.5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -35%;
+	margin-top: -35%;
+	transition: 0.3s ease;
+}
+.triggerHover {
+	animation: 1s active-van linear infinite;
+	animation-direction: alternate;
+}
+
+.activeTriggerImage {
+	pointer-events: all;
+	opacity: 1;
+}
+
+.inactiveTriggerImage {
+	pointer-events: none;
+	opacity: 0;
+	transform: translate(-50px 50px);
+}
+
+.zoomOff {
+	animation: 0.4s zoom-off linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoom-off {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		transform: translate(-50px, -50px);
+		opacity: 1;
+	}
+	70% {
+		transform: translate(-50px, -50px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(150px, 140px);
+		opacity: 0;
+	}
+}
+.takeATripTriggerImageContainer {
+	position: absolute;
+	padding: 50px;
+	top: 35vh;
+	left: 50vw;
+	width: 500px;
+	height: 500px;
+	transform: translate(-250px);
+	display: flex;
+	border-radius: 300px;
+	transition: 1s ease;
+	background: rgba(226, 248, 250, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.takeATripTriggerImageContainer:hover {
+	background: rgba(236, 185, 252, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cornerTriggerImage {
+	z-index: 20;
+}
+
+.cornerTriggerImageContainer {
+	position: fixed;
+	top: 10px;
+	left: calc(100vw);
+	width: 100px;
+	height: 100px;
+	padding: 15px;
+	z-index: 20;
+}
+
+@keyframes active-van {
+	0% {
+		transform: translate(0px);
+	}
+	25% {
+		transform: translateX(3px) translateY(3px);
+	}
+	50% {
+		transform: translateX(-1px) translateY(-1px);
+	}
+	75% {
+		transform: translateX(4px) translateY(4px);
+	}
+	100% {
+		transform: translate(0px);
+	}
+}
+/* Saffron rgba(193,103,88,1)
+Magnolia rgba(246,207,122,1)
+Shale rgba(152,173,177,1)
+Hollyhock Pink rgba(204,151,157,1) 
+Sandstone rgba(233,217,178,1)
+Burgundy rgba(96,76,81,1)*/
+
+.dividerABackground {
+	position: absolute;
+	height: 30vh;
+	width: 50vw;
+	left: 50%;
+	top: 50%;
+	margin-left: -20vw;
+	margin-top: -10vh;
+	font-size: 7vw;
+	font-family: 'Shrikhand', cursive;
+	z-index: -3;
+}
+
+#dividerABackground1 {
+	color: rgb(184, 229, 243);
+	opacity: 0;
+	animation-delay: 0.5s;
+	z-index: -3;
+}
+
+#dividerABackground2 {
+	color: rgb(53, 72, 107);
+	opacity: 0;
+	animation-delay: 1s;
+}
+
+#dividerABackground3 {
+	color: #a5f8f3;
+	opacity: 0;
+	animation-delay: 1.5s;
+}
+
+#dividerABackground4 {
+	color: #e8e500;
+	opacity: 0;
+}
+#dividerABackground5 {
+	color: #ff9de6;
+	opacity: 0;
+
+	animation-delay: 1.75s;
+}
+
+.addTrippyEffect {
+	animation: 2s glow-3 infinite, 5s rainbowtextshadow forwards infinite;
+}
+
+@keyframes glow {
+	0% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	100% {
+		transform: translate(-5px, -5px) skew(10deg, 5deg);
+		opacity: 0;
+	}
+}
+@keyframes glow-2 {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		transform: translate(-10px, 10px) skew(10deg, 5deg);
+		opacity: 0;
+	}
+}
+@keyframes glow-3 {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		transform: translate(0px, -100px) skew(-20deg, -10deg);
+		opacity: 0;
+	}
+}
+@keyframes rainbowdropshadow {
+	0% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	8% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	16% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	25% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	33% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	41% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	50% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	58% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	66% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	75% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+	83% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+	91% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+	100% {
+		box-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+}
+
+@keyframes rainbowtextshadow {
+	0% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	8% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	16% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	25% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	33% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(203, 146, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(203, 146, 230);
+	}
+	41% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	50% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	58% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	66% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(146, 179, 230), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), 3px 3px 14px rgb(146, 179, 230);
+	}
+	75% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+	83% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+	91% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+	100% {
+		text-shadow: 1px 1px 8px #ff9de6, 2px 2px 11px rgb(188, 255, 197),
+			3px 3px 14px rgb(147, 245, 108), -1px -1px 8px #ff9de6,
+			-2px -2px 11px rgb(188, 255, 197), -3px -3px 14px rgb(147, 245, 108);
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.dejaVuHeader {
+		font-size: 75px;
+	}
+	.dejaVuTagline {
+		font-size: 20px;
+	}
+	.heroArt {
+		top: 90vh;
+		width: 200px;
+		transform: translateX(-100px);
+	}
+
+	.heroArt2 {
+		width: 200px;
+		right: -110px;
+	}
+
+	.heroArt3 {
+		width: 200px;
+		left: -110px;
+	}
+
+	.heroArt4 {
+		width: 200px;
+		right: -110px;
+	}
+
+	.heroArt5 {
+		width: 200px;
+		left: -110px;
+	}
+	.dividerABackground {
+		top: 60%;
+		margin-top: -10vh;
+	}
+	.takeATripTriggerImageContainer {
+		width: 300px;
+		height: 300px;
+		transform: translate(-150px);
+	}
+	.cornerTriggerImageContainer {
+		position: fixed;
+		top: 10px;
+		left: 105vw;
+		width: 75px;
+		height: 75px;
+		padding: 15px;
+		z-index: 20;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.dejaVuTagline {
+		font-size: 14px;
+	}
+	.cornerTriggerImageContainer {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.blueCircleContainer {
+		width: 35vw;
+		bottom: -7vh;
+		right: -7vw;
+	}
+}

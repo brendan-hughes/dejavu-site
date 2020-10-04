@@ -1,0 +1,2 @@
+export const CONTACT_SUBMIT = 'CONTACT_SUBMIT';
+export const CONTACT_FAIL = 'CONTACT_FAIL';

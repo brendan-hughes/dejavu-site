@@ -1,0 +1,235 @@
+.contactSection {
+	height: 70vh;
+	width: 100%;
+	position: absolute;
+	top: calc(570vh + 60px);
+	z-index: 1;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+.getInTouchHeader {
+	font-family: 'Shrikhand', cursive;
+	margin: auto;
+	letter-spacing: 2px;
+	color: rgb(247, 241, 229);
+	font-size: 5vw;
+	transition: 0.3s ease;
+	text-shadow: -4px 4px 0px rgba(96, 76, 81, 1), 4px 4px 0px rgba(96, 76, 81, 1),
+		-10px 10px 0px rgba(193, 103, 88, 1), 10px 10px 0px rgba(193, 103, 88, 1),
+		-14px 14px 0px rgba(246, 207, 122, 1), 14px 14px 0px rgba(246, 207, 122, 1);
+}
+
+.trippyContactHeader {
+	color: white;
+	text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+		-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+		10px 10px 0px #ff9de6;
+	animation: 5s headerrainbowtextshadow alternate infinite;
+}
+
+.contactHeaderBackground {
+	position: absolute;
+	height: 30vh;
+	width: 50vw;
+	margin-top: calc(-13vh);
+	font-size: 5vw;
+	font-family: 'Shrikhand', cursive;
+	z-index: -3;
+	opacity: 0;
+}
+
+.contactHeaderContainer {
+	margin: auto;
+}
+
+#contactBackground1 {
+	color: rgb(184, 229, 243);
+	animation-delay: 0.5s;
+	z-index: -3;
+}
+
+#contactBackground2 {
+	color: rgb(53, 72, 107);
+	opacity: 0;
+	animation-delay: 1s;
+}
+
+#contactBackground3 {
+	color: #a5f8f3;
+	opacity: 0;
+	animation-delay: 1.5s;
+}
+
+#contactBackground4 {
+	color: #e8e500;
+	opacity: 0;
+}
+#contactBackground15 {
+	color: #ff9de6;
+	opacity: 0;
+
+	animation-delay: 1.75s;
+}
+
+.addContactTrippyEffect {
+	animation: 2s glow-2 infinite, 5s rainbowtextshadow forwards infinite;
+}
+
+.getInTouchBox {
+	width: 450px;
+	height: 400px;
+	background-image: linear-gradient(rgb(235, 235, 235), rgba(200, 200, 200, 1));
+	margin: auto;
+	border-radius: 100px;
+	border: 5px solid rgba(193, 103, 88, 1);
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.getInTouchInput {
+	margin: auto;
+	padding: 5px;
+	width: 80%;
+	font-family: 'News Cycle', sans-serif;
+	height: 30px;
+	color: rgba(146, 75, 75, 0.658);
+	border-radius: 5px;
+	border: 1px solid rgba(146, 75, 75, 0.658);
+	background: rgb(224, 224, 224);
+}
+
+.getInTouchInput::placeholder,
+.getInTouchTextArea::placeholder {
+	color: rgba(71, 71, 71, 0.658);
+}
+
+.getInTouchInput:focus,
+.getInTouchTextArea:focus {
+	background: rgb(255, 250, 245);
+	outline: none;
+	border: 2px solid rgba(146, 75, 75, 0.658);
+}
+
+.getInTouchTextArea {
+	margin: auto;
+	padding: 5px;
+	font-family: 'News Cycle', sans-serif;
+	width: 80%;
+	height: 150px;
+	color: rgba(146, 75, 75, 0.658);
+	border-radius: 5px;
+	border: 1px solid rgba(146, 75, 75, 0.658);
+	background: rgb(224, 224, 224);
+	resize: none;
+}
+
+.getInTouchButton {
+	margin: 15px auto;
+	font-family: 'News Cycle', serif;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 2px solid rgba(146, 75, 75);
+	background: rgba(146, 75, 75);
+	color: white;
+	height: 40px;
+	width: 100px;
+	transition: 0.3s ease;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3), 0 -3px 4px rgba(0, 0, 0, 0.22);
+}
+.getInTouchButton:hover {
+	transform: scale(1.1);
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3), 0 -5px 8px rgba(0, 0, 0, 0.22);
+}
+.getInTouchButton:focus {
+	outline: none;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3), 0 -3px 4px rgba(0, 0, 0, 0.22);
+}
+.getInTouchButton:active {
+	transform: scale(0.98);
+}
+
+.getInTouchText {
+	text-align: center;
+	font-size: 14px;
+	color: rgb(49, 49, 49);
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 -2px 5px rgba(0, 0, 0, 0.22);
+	font-family: 'News Cycle', sans-serif;
+	font-weight: lighter;
+	margin: 40px 50px 10px;
+}
+
+.trippyGetInTouchText {
+	color: rgba(53, 72, 107, 0.8);
+	text-shadow: -1px 1px 0px rgba(53, 72, 107, 0.4),
+		1px 1px 1px rgba(53, 72, 107, 0.4);
+}
+
+.trippyContactInput {
+	color: rgb(252, 0, 139);
+	border-radius: 5px;
+	border: 1px solid rgba(255, 0, 200, 0.596);
+	background: rgb(255, 255, 255);
+	resize: none;
+}
+.trippyContactInput:focus {
+	color: rgb(252, 0, 139);
+	border-radius: 5px;
+	border: 2px solid rgba(255, 0, 200, 0.788);
+	background: rgb(255, 255, 255);
+	resize: none;
+}
+
+.trippyContactBox {
+	background: rgba(255, 255, 255, 0.8);
+	border: 5px solid transparent;
+	animation: 5s rainbowdropshadow linear infinite;
+	animation-direction: alternate;
+}
+
+.trippyContactButton {
+	background: rgb(252, 0, 139);
+	border: 2px solid rgb(252, 0, 139);
+	color: white;
+}
+
+.contactErrorContainer {
+	position: absolute;
+	top: 10px;
+	left: 100%;
+	width: 100%;
+	transform: translate(-100%);
+	display: flex;
+}
+
+.contactErrorText {
+	margin: auto;
+	font-family: 'News Cycle', sans-serif;
+	color: rgb(252, 0, 0);
+}
+
+.contactSuccessContainer {
+	position: absolute;
+	top: 10px;
+	left: 100%;
+	width: 100%;
+	transform: translate(-100%);
+	display: flex;
+}
+
+.contactSuccessText {
+	margin: auto;
+	font-family: 'News Cycle', sans-serif;
+	color: rgb(0, 109, 252);
+}
+
+@media screen and (max-width: 1000px) {
+	.contactHeaderBackground {
+		display: none;
+	}
+}

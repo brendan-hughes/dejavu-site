@@ -1,0 +1,124 @@
+nav {
+	margin-top: 10px;
+	height: 50px;
+	position: fixed;
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	transition: 0.3s ease;
+	z-index: 7;
+	backdrop-filter: blur(20px);
+}
+
+nav:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul li {
+	list-style: none;
+	font-family: 'News Cycle', sans-serif;
+	opacity: 0.5;
+	transition: 0.2s ease;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.trippynav:after {
+	content: '';
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%);
+	height: 3px;
+	width: 100%;
+	background: linear-gradient(
+		60deg,
+		#ff9de6,
+		#e8e500,
+		rgb(188, 255, 197),
+		rgb(203, 146, 230),
+		#5073b8,
+		#1098ad,
+		#c4c4c4,
+		#929292
+	);
+	opacity: 0.5;
+	z-index: -1;
+	animation: navbargradient 3s ease alternate infinite;
+	background-size: 300% 300%;
+}
+
+.trippynav {
+	background: rgba(255, 255, 255, 0.1);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.trippynav ul li {
+	opacity: 1;
+}
+
+nav ul li:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+nav ul li img {
+	width: 20px;
+	margin-left: 5px;
+	transform: translateY(2px);
+}
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+}
+
+@keyframes navbargradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav ul li {
+		list-style: none;
+		font-family: 'News Cycle', sans-serif;
+		font-size: 12px;
+		opacity: 0.5;
+		transition: 0.2s ease;
+	}
+	nav {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	nav ul li {
+		list-style: none;
+		font-family: 'News Cycle', sans-serif;
+		font-size: 10px;
+		opacity: 0.5;
+		transition: 0.2s ease;
+	}
+	nav {
+		width: 80%;
+	}
+	nav ul li img {
+		width: 10px;
+		margin-left: 5px;
+		transform: translateY(2px);
+	}
+}

@@ -1,0 +1,180 @@
+.showsSection {
+	height: 80vh;
+	width: 100%;
+	position: absolute;
+	top: calc(490vh + 60px);
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.showsHeader {
+	font-family: 'Shrikhand', cursive;
+	margin: 30px auto;
+	letter-spacing: 2px;
+	color: rgb(247, 241, 229);
+	font-size: 5vw;
+	transition: 0.3s ease;
+	text-shadow: -4px 4px 0px #604c51, 4px 4px 0px rgba(96, 76, 81, 1),
+		-10px 10px 0px #c16758, 10px 10px 0px rgba(193, 103, 88, 1),
+		-14px 14px 0px #f6cf7a, 14px 14px 0px rgba(246, 207, 122, 1);
+}
+
+.showsParagraph {
+	margin: 30px;
+	color: rgb(247, 241, 229);
+
+	text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	font-family: 'Playfair Display', serif;
+	font-weight: lighter;
+	font-size: 2vw;
+	text-align: center;
+	position: absolute;
+	top: calc(50% - 60px);
+	z-index: 2;
+}
+
+.trippyShowsHeader {
+	color: white;
+	text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+		-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+		10px 10px 0px #ff9de6;
+	animation: 5s headerrainbowtextshadow alternate infinite;
+}
+
+.showsHeaderBackground {
+	position: absolute;
+	height: 30vh;
+	width: 50vw;
+	margin-top: calc(-13vh - 30px);
+	font-size: 5vw;
+	font-family: 'Shrikhand', cursive;
+	z-index: -3;
+	opacity: 0;
+}
+
+.showsHeaderContainer {
+	margin: auto;
+}
+
+#showsBackground1 {
+	color: rgb(184, 229, 243);
+	animation-delay: 0.5s;
+	z-index: -3;
+}
+
+#showsBackground2 {
+	color: rgb(53, 72, 107);
+	opacity: 0;
+	animation-delay: 1s;
+}
+
+#showsBackground3 {
+	color: #a5f8f3;
+	opacity: 0;
+	animation-delay: 1.5s;
+}
+
+#showsBackground4 {
+	color: #e8e500;
+	opacity: 0;
+}
+#showsBackground15 {
+	color: #ff9de6;
+	opacity: 0;
+
+	animation-delay: 1.75s;
+}
+
+.addShowsTrippyEffect {
+	animation: 3s glow infinite, 5s rainbowtextshadow forwards infinite;
+}
+.showTextContainer {
+	margin: 50px auto 50px;
+	width: 500px;
+	height: 500px;
+	border: 10px solid rgb(212, 212, 212);
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	position: relative;
+}
+
+.trippyShows {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	opacity: 0;
+}
+
+.makeVisible {
+	opacity: 0.3;
+}
+
+.normalShows {
+	background-image: url('../../assets/60spattern.png');
+	background-size: 100%;
+	background-size: cover;
+	filter: blur(3px) saturate(40%);
+	height: 100%;
+	width: 100%;
+	transition: 0.4s ease;
+	opacity: 1;
+}
+
+.makeInvisible {
+	opacity: 0;
+}
+
+.normalShows:hover {
+	filter: blur(0px) saturate(80%);
+}
+
+.trippyShowsTextContainer {
+	background: rgba(255, 255, 255, 0.8);
+	border: 10px solid transparent;
+	animation: 5s rainbowdropshadow linear infinite;
+	animation-direction: alternate;
+}
+
+.makeTextTrippy {
+	color: white;
+	text-shadow: -1px 1px 0px rgba(53, 72, 107, 0.4),
+		1px 1px 1px rgba(53, 72, 107, 0.4), -3px 3px 0px #e8e4006e,
+		3px 3px 0px #e8e40060, -4px 4px 0px #ff9de7a4, 4px 4px 0px #ff9de796;
+	/* animation: 5s headerrainbowtextshadow alternate infinite; */
+}
+
+@media screen and (max-width: 1000px) {
+	.showsSection {
+		height: 80vh;
+		width: 100%;
+		position: absolute;
+		top: calc(500vh + 60px);
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+	}
+	.showsParagraph {
+		font-size: 30px;
+	}
+	.showTextContainer {
+		max-height: 500px;
+		max-width: 500px;
+		transform: translateY(-10%);
+	}
+	.showsHeaderBackground {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.showTextContainer {
+		max-height: 400px;
+		max-width: 400px;
+		transform: translateY(-25%);
+	}
+}

@@ -1,0 +1,254 @@
+.bandSection {
+	position: absolute;
+	top: 250vh;
+	height: 100vh;
+	width: 100vw;
+	background: transparent;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+}
+.bandContentContainer {
+	display: grid;
+	grid-template: repeat(2, 1fr);
+	grid-gap: 10px;
+	grid-auto-flow: column;
+}
+
+.bandLeft {
+	position: relative;
+	margin: auto auto auto 50px;
+	display: flex;
+}
+
+.innerBand {
+	background-image: linear-gradient(rgb(235, 235, 235), rgba(200, 200, 200, 1));
+	border: 10px solid rgb(133, 83, 74);
+	width: 90%;
+	margin: auto;
+	border-radius: 100px;
+	transition: 1s ease;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	overflow: hidden;
+	z-index: 0;
+	position: relative;
+}
+
+.bandVideo > div {
+	position: absolute;
+}
+
+.bandVideo {
+	border-radius: 100px;
+
+	z-index: 5;
+	pointer-events: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.bandPic {
+	background-image: url('../../assets/bandpic.jpeg');
+	background-size: 100%;
+	background-position: top;
+}
+
+.bandBorderBottom {
+	position: absolute;
+	width: 00%;
+	bottom: 0%;
+	right: 0%;
+	opacity: 0;
+	transition: 0.5s ease;
+	pointer-events: none;
+}
+
+.normalBandBorder {
+	position: absolute;
+	width: 100%;
+	bottom: -20%;
+	opacity: 0;
+	transition: 0.5s ease;
+	pointer-events: none;
+	bottom: -100px;
+}
+.bandBorderTop {
+	position: absolute;
+	width: 0%;
+	transition: 0.5s ease;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.visibleBorder {
+	opacity: 1;
+	width: 50%;
+}
+.normaBorderWidth {
+	width: 100%;
+}
+.trippyCardBackground {
+	background: rgba(255, 255, 255, 0.822);
+	border: 10px solid rgba(255, 255, 255, 0.089);
+	animation: 5s rainbowdropshadow linear infinite;
+	animation-direction: alternate;
+}
+
+.bandRight {
+	height: 400px;
+	min-width: 350px;
+	position: relative;
+	margin: auto 50px auto 50px;
+	transform: translateY(10%);
+	display: flex;
+	flex-direction: column;
+	transition: 0.3s ease;
+}
+.bandRight .innerBand {
+	display: flex;
+	padding: 20px 30px 30px;
+	flex-direction: column;
+}
+
+.innerBand p {
+	margin: auto 80px;
+	color: rgb(17, 17, 17);
+	text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
+	font-family: 'News Cycle', sans-serif;
+	font-weight: lighter;
+}
+
+.meetTheBand {
+	margin: 10px 100px;
+	text-align: center;
+	color: rgb(247, 241, 229);
+	text-shadow: -2px 2px 10px rgba(96, 76, 81, 1),
+		2px 2px 0px rgba(96, 76, 81, 1), -3px 3px 0px rgba(193, 103, 88, 1),
+		3px 3px 0px rgba(193, 103, 88, 1), -4px 4px 0px rgba(246, 207, 122, 1),
+		4px 4px 0px rgba(246, 207, 122, 1);
+	letter-spacing: 2px;
+	font-family: 'Shrikhand', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.meetTheBandTrippy {
+	color: white;
+	text-shadow: -2px 2px 0px rgb(191, 196, 207), 2px 2px 0px rgb(53, 72, 107),
+		-3px 3px 0px #e8e500, 3px 3px 0px #e8e500, -4px 4px 0px #ff9de6,
+		4px 4px 0px #ff9de6;
+}
+
+.innerBand hr {
+	color: black;
+	width: 60%;
+}
+.bandHeaderContainer {
+	margin: auto;
+}
+
+.bandHeader {
+	font-family: 'Shrikhand', cursive;
+	margin: auto;
+	letter-spacing: 2px;
+	color: rgb(247, 241, 229);
+	font-size: 5vw;
+	transition: 0.3s ease;
+	text-shadow: -4px 4px 0px rgba(96, 76, 81, 1), 4px 4px 0px rgba(96, 76, 81, 1),
+		-10px 10px 0px rgba(193, 103, 88, 1), 10px 10px 0px rgba(193, 103, 88, 1),
+		-14px 14px 0px rgba(246, 207, 122, 1), 14px 14px 0px rgba(246, 207, 122, 1);
+}
+
+.trippyBandHeader {
+	color: white;
+	text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+		-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+		10px 10px 0px #ff9de6;
+	animation: 5s headerrainbowtextshadow alternate infinite;
+}
+
+.bandHeaderBackground {
+	position: absolute;
+	height: 30vh;
+	width: 50vw;
+	margin-top: -13vh;
+	font-size: 5vw;
+	font-family: 'Shrikhand', cursive;
+	z-index: -3;
+	opacity: 0;
+}
+
+#bandBackground1 {
+	color: rgb(184, 229, 243);
+	animation-delay: 0.5s;
+	z-index: -3;
+}
+
+#bandBackground2 {
+	color: rgb(53, 72, 107);
+	opacity: 0;
+	animation-delay: 1s;
+}
+
+#bandBackground3 {
+	color: #a5f8f3;
+	opacity: 0;
+	animation-delay: 1.5s;
+}
+
+#bandBackground4 {
+	color: #e8e500;
+	opacity: 0;
+}
+#bandBackground15 {
+	color: #ff9de6;
+	opacity: 0;
+
+	animation-delay: 1.75s;
+}
+
+.addBandTrippyEffect {
+	animation: 3s glow infinite, 5s rainbowtextshadow forwards infinite;
+}
+
+@media screen and (max-width: 1000px) {
+	.innerBand p {
+		font-size: 12px;
+		margin: auto;
+		padding: 10px;
+	}
+	.bandBorderTop {
+		top: -50px;
+	}
+	.bandBorderBottom {
+		bottom: -50px;
+	}
+
+	.meetTheBand {
+		font-size: 24px;
+		width: 100%;
+		margin: 20px auto 20px;
+	}
+	.bandContentContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.bandLeft {
+		width: 90%;
+		margin: 50px auto auto auto;
+		display: flex;
+	}
+	.bandRight {
+		margin-top: 100px;
+	}
+	.bandSection {
+		height: auto;
+	}
+	.bandHeaderBackground {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+}

@@ -1,0 +1,161 @@
+.outerDotContainer {
+	overflow: hidden;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	z-index: 0;
+	transition: 1s ease;
+}
+
+.activeDot {
+	opacity: 0.8;
+}
+.dotContainer {
+	width: 200%;
+	top: -150vh;
+	right: -10vw;
+	position: fixed;
+}
+
+.dot-1 {
+	fill: rgb(184, 229, 243);
+	transition: 1s ease;
+}
+.dot-2 {
+	fill: rgb(53, 72, 107);
+	transition: 1s ease;
+}
+.dot-3 {
+	fill: #00d9ff;
+	transition: 1s ease;
+}
+.dot-4 {
+	fill: #e8e500;
+	transition: 1s ease;
+}
+.dot-5 {
+	fill: #ff9de6;
+	transition: 1s ease;
+}
+.dot-6 {
+	fill: rgb(188, 255, 197);
+	transition: 1s ease;
+}
+.dot-7 {
+	fill: rgb(146, 179, 230);
+	transition: 1s ease;
+}
+
+.dotOneSVG {
+	animation: 20s rotate-glow linear infinite;
+	animation-direction: forwards;
+	z-index: -1;
+}
+
+.dotTwoContainer {
+	animation: 20s reverse-rotate-glow linear infinite;
+	animation-direction: forwards;
+}
+
+@keyframes rotate-glow {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}
+
+@keyframes color-change-1 {
+	0% {
+		fill: rgb(255, 255, 255);
+	}
+	25% {
+		fill: rgb(29, 53, 99);
+	}
+	50% {
+		fill: rgb(60, 70, 111);
+	}
+	75% {
+		fill: rgb(218, 96, 62);
+	}
+	100% {
+		fill: rgb(220, 130, 68);
+	}
+}
+
+@keyframes color-change-2 {
+	0% {
+		fill: #e8b6b1;
+	}
+	25% {
+		fill: #c8d9cf;
+	}
+	50% {
+		fill: #f3dcc9;
+	}
+	75% {
+		fill: #c4d8da;
+	}
+	100% {
+		fill: #c8d9cf;
+	}
+}
+
+@keyframes color-change-3 {
+	0% {
+		fill: #c4d8da;
+	}
+	25% {
+		fill: #f3dcc9;
+	}
+	50% {
+		fill: #f6bb95;
+	}
+	75% {
+		fill: #c8d9cf;
+	}
+	100% {
+		fill: #e8b6b1;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.dotContainer {
+		width: 200%;
+		top: -100vh;
+		right: -10vw;
+		position: fixed;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.dotContainer {
+		width: 275%;
+		top: -80vh;
+		right: -25vw;
+		position: fixed;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.dotContainer {
+		width: 350%;
+		top: -40vh;
+		right: -50vw;
+		position: fixed;
+	}
+}
+
+.filter {
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(20px);
+}

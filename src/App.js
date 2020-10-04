@@ -15,6 +15,7 @@ class App extends Component {
 			<Provider store={store}>
 				<Router>
 					<Navbar />
+					<div className="homeBackground"></div>
 					<Route exact path="/" component={Home} />
 					<Footer />
 				</Router>

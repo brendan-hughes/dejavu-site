@@ -1,0 +1,168 @@
+.musicSection {
+	height: 120vh;
+	width: 100%;
+	position: absolute;
+	top: 370vh;
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0px;
+	z-index: 1;
+}
+
+.musicContentsContainer {
+	display: grid;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+	grid-template-columns: repeat(4, 1fr);
+	height: 100%;
+	margin: 30px 150px;
+}
+.trippyMusicCard {
+	animation: 5s rainbowdropshadow linear infinite;
+	animation-direction: alternate;
+}
+.musicCard {
+	height: 200px;
+	border-radius: 5px;
+	width: 200px;
+	margin: auto;
+	background: white;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	transition: 0.4s ease;
+	display: flex;
+	flex-direction: column;
+}
+
+.albumArt {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	transition: 1s ease;
+}
+.artistName {
+	color: white;
+	text-align: center;
+	font-family: 'Shrikhand';
+	opacity: 0;
+	transition: 0.5s ease;
+	text-shadow: 0 4px 5px rgba(0, 0, 0, 0.3), 0 4px 5px rgba(0, 0, 0, 0.22);
+	transform: translateY(15px);
+}
+
+.visibleArtistName {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.albumArtPsyc {
+	filter: saturate(250%);
+}
+
+.musicCard:hover {
+	transform: translateY(-20px) scale(1.05);
+	text-shadow: 0 4px 5px rgba(0, 0, 0, 0.3), 0 4px 5px rgba(0, 0, 0, 0.22);
+}
+
+.musicHeader {
+	font-family: 'Shrikhand', cursive;
+	margin: auto;
+	letter-spacing: 2px;
+	color: rgb(247, 241, 229);
+	font-size: 5vw;
+	transition: 0.3s ease;
+	text-shadow: -4px 4px 0px rgba(96, 76, 81, 1), 4px 4px 0px rgba(96, 76, 81, 1),
+		-10px 10px 0px rgba(193, 103, 88, 1), 10px 10px 0px rgba(193, 103, 88, 1),
+		-14px 14px 0px rgba(246, 207, 122, 1), 14px 14px 0px rgba(246, 207, 122, 1);
+}
+
+.trippyMusicHeader {
+	color: white;
+	text-shadow: -4px 4px 0px rgb(53, 72, 107), 4px 4px 0px rgb(53, 72, 107),
+		-7px 7px 0px #e8e500, 7px 7px 0px #e8e500, -10px 10px 0px #ff9de6,
+		10px 10px 0px #ff9de6;
+	animation: 5s headerrainbowtextshadow alternate infinite;
+}
+
+.musicHeaderBackground {
+	position: absolute;
+	height: 30vh;
+	width: 50vw;
+	margin-top: -13vh;
+	font-size: 5vw;
+	font-family: 'Shrikhand', cursive;
+	z-index: -3;
+	opacity: 0;
+}
+
+.musicHeaderContainer {
+	margin: auto;
+}
+
+#musicBackground1 {
+	color: rgb(184, 229, 243);
+	animation-delay: 0.5s;
+	z-index: -3;
+}
+
+#musicBackground2 {
+	color: rgb(53, 72, 107);
+	opacity: 0;
+	animation-delay: 1s;
+}
+
+#musicBackground3 {
+	color: #a5f8f3;
+	opacity: 0;
+	animation-delay: 1.5s;
+}
+
+#musicBackground4 {
+	color: #e8e500;
+	opacity: 0;
+}
+#musicBackground15 {
+	color: #ff9de6;
+	opacity: 0;
+
+	animation-delay: 1s;
+}
+
+.addMusicTrippyEffect {
+	animation: 3s glow-2 infinite, 5s rainbowtextshadow forwards infinite;
+}
+
+@media screen and (max-width: 1300px) {
+	.musicContentsContainer {
+		display: grid;
+		grid-column-gap: 50px;
+		grid-row-gap: 50px;
+		grid-template-columns: repeat(3, 1fr);
+		height: 100%;
+		margin: 30px 150px;
+	}
+	.musicSection {
+		height: auto;
+	}
+	.musicCard {
+		height: 150px;
+		width: 150px;
+	}
+
+	.musicHeaderBackground {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.musicContentsContainer {
+		display: grid;
+		grid-column-gap: 50px;
+		grid-row-gap: 50px;
+		grid-template-columns: repeat(2, 1fr);
+		height: 100%;
+		margin: 50px auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+}
