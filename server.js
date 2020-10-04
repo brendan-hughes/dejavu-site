@@ -1,10 +1,8 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
-app.use(bodyParser.json()); // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json({ extended: false }));
 app.use('/api/contact', require('./routes/api/contact'));
 
 const port = process.env.PORT || 5000;
