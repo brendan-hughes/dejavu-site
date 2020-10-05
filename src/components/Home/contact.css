@@ -236,7 +236,7 @@
 		height: 70vh;
 		width: 100%;
 		position: absolute;
-		top: calc(595vh + 60px);
+		top: calc(600vh + 60px);
 		z-index: 1;
 		display: flex;
 		overflow: hidden;

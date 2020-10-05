@@ -2,10 +2,11 @@
 	height: 80vh;
 	width: 100%;
 	position: absolute;
-	top: calc(490vh + 60px);
+	top: calc(495vh + 60px);
 	display: flex;
 	flex-direction: column;
 	z-index: 1;
+	overflow: hidden;
 }
 
 .showsHeader {
@@ -153,7 +154,7 @@
 		height: 80vh;
 		width: 100%;
 		position: absolute;
-		top: calc(525vh + 60px);
+		top: calc(530vh + 60px);
 		display: flex;
 		flex-direction: column;
 		z-index: 1;

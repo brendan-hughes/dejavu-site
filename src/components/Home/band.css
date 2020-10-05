@@ -7,6 +7,7 @@
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 .bandContentContainer {
 	display: grid;
@@ -239,7 +240,7 @@
 		display: flex;
 	}
 	.bandRight {
-		margin-top: 100px;
+		margin: 100px auto;
 	}
 	.bandSection {
 		height: auto;
