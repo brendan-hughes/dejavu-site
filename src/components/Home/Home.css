@@ -11,6 +11,7 @@ Burgundy rgba(96,76,81,1)*/
 	display: flex;
 	position: absolute;
 	z-index: 2;
+	overflow: hidden;
 }
 .homeBackground {
 	height: 100%;
