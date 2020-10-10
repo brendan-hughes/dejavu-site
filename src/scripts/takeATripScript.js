@@ -48,13 +48,6 @@ function takeATripScript() {
 	const deco6Container = document.querySelector('.deco6Container');
 	const meetTheBand = document.querySelector('.meetTheBand');
 
-	takeATripTriggerImageContainer.addEventListener('mouseover', () => {
-		deco6Container.classList.add('visibleTouchIcon');
-	});
-	takeATripTriggerImageContainer.addEventListener('mouseout', () => {
-		deco6Container.classList.remove('visibleTouchIcon');
-	});
-
 	normalVan.addEventListener('mouseover', () => {
 		normalVan.classList.add('triggerHover');
 	});
