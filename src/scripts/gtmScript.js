@@ -6,7 +6,6 @@ function gtmScript() {
 	let showsSection = document.querySelector('.showsSection');
 	let contactSection = document.querySelector('.contactSection');
 	let triggerImage = document.querySelector('.takeATripTriggerImageContainer');
-
 	let triggerOnce = false;
 	let bandOnce = false;
 	let musicOnce = false;
@@ -15,6 +14,7 @@ function gtmScript() {
 
 	triggerImage.addEventListener('click', () => {
 		if (!triggerOnce) {
+			triggerOnce = true;
 			TagManager.dataLayer({
 				dataLayer: {
 					trigger: 'true',
@@ -26,6 +26,7 @@ function gtmScript() {
 	window.addEventListener('scroll', () => {
 		if (window.innerHeight >= bandSection.getBoundingClientRect().top) {
 			if (!bandOnce) {
+				bandOnce = true;
 				TagManager.dataLayer({
 					dataLayer: {
 						section: 'band',
@@ -35,6 +36,7 @@ function gtmScript() {
 		}
 		if (window.innerHeight >= musicSection.getBoundingClientRect().top) {
 			if (!musicOnce) {
+				musicOnce = true;
 				TagManager.dataLayer({
 					dataLayer: {
 						section: 'music',
@@ -44,6 +46,7 @@ function gtmScript() {
 		}
 		if (window.innerHeight >= showsSection.getBoundingClientRect().top) {
 			if (!showsOnce) {
+				showsOnce = true;
 				TagManager.dataLayer({
 					dataLayer: {
 						section: 'shows',
@@ -53,6 +56,7 @@ function gtmScript() {
 		}
 		if (window.innerHeight >= contactSection.getBoundingClientRect().top) {
 			if (!contactOnce) {
+				contactOnce = true;
 				TagManager.dataLayer({
 					dataLayer: {
 						section: 'contact',
