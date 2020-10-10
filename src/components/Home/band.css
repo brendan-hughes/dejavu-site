@@ -213,7 +213,6 @@
 
 @media screen and (max-width: 1100px) {
 	.innerBand p {
-		font-size: 12px;
 		margin: auto;
 		padding: 10px;
 	}
@@ -240,7 +239,7 @@
 		display: flex;
 	}
 	.bandRight {
-		margin: 100px auto;
+		margin: 350px auto 0px;
 	}
 	.bandSection {
 		height: auto;
@@ -248,13 +247,19 @@
 	.bandHeaderBackground {
 		display: none;
 	}
+	.normalBandBorder {
+		bottom: -350px;
+	}
 }
 
 @media screen and (max-width: 700px) {
 	.normalBandBorder {
-		bottom: -120px;
+		bottom: -80px;
 	}
 	.bandVideo {
 		height: 200px;
+	}
+	.bandRight {
+		margin: 150px auto;
 	}
 }
