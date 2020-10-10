@@ -789,13 +789,9 @@ Burgundy rgba(96,76,81,1)*/
 		transform: translate(-150px);
 	}
 	.cornerTriggerImageContainer {
-		position: fixed;
-		top: 10px;
-		left: 105vw;
-		width: 75px;
-		height: 75px;
-		padding: 15px;
-		z-index: 20;
+		width: 300px;
+		height: 300px;
+		transform: translate(-150px);
 	}
 }
 
@@ -804,7 +800,9 @@ Burgundy rgba(96,76,81,1)*/
 		font-size: 12px;
 	}
 	.cornerTriggerImageContainer {
-		display: none;
+		width: 300px;
+		height: 300px;
+		transform: translate(-150px);
 	}
 }
 

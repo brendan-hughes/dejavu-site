@@ -2,7 +2,7 @@
 	height: 80vh;
 	width: 100%;
 	position: absolute;
-	top: calc(495vh + 60px);
+	top: 515vh;
 	display: flex;
 	flex-direction: column;
 	z-index: 1;
@@ -154,7 +154,7 @@
 		height: 80vh;
 		width: 100%;
 		position: absolute;
-		top: calc(550vh);
+		top: 525vh;
 		display: flex;
 		flex-direction: column;
 		z-index: 1;

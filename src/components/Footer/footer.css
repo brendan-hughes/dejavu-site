@@ -1,6 +1,6 @@
 footer {
 	position: absolute;
-	top: calc(650vh + 60px);
+	top: 675vh;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;

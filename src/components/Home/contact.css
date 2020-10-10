@@ -236,7 +236,7 @@
 		height: 70vh;
 		width: 100%;
 		position: absolute;
-		top: calc(600vh + 60px);
+		top: 595vh;
 		z-index: 1;
 		display: flex;
 		overflow: hidden;
@@ -250,6 +250,6 @@
 		height: 400px;
 	}
 	.contactSection {
-		top: 650vh;
+		top: 620vh;
 	}
 }
