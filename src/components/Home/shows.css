@@ -154,7 +154,7 @@
 		height: 80vh;
 		width: 100%;
 		position: absolute;
-		top: 525vh;
+		top: 500vh;
 		display: flex;
 		flex-direction: column;
 		z-index: 1;
@@ -181,5 +181,14 @@
 	}
 	.showsHeaderBackground {
 		display: none;
+	}
+	.showsSection {
+		height: 80vh;
+		width: 100%;
+		position: absolute;
+		top: 525vh;
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
 	}
 }

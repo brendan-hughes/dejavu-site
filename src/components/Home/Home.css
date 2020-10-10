@@ -792,6 +792,10 @@ Burgundy rgba(96,76,81,1)*/
 		width: 300px;
 		height: 300px;
 		transform: translate(-150px);
+		position: absolute;
+		padding: 50px;
+		top: 35vh;
+		left: 50vw;
 	}
 }
 
@@ -803,6 +807,10 @@ Burgundy rgba(96,76,81,1)*/
 		width: 300px;
 		height: 300px;
 		transform: translate(-150px);
+		position: absolute;
+		padding: 50px;
+		top: 35vh;
+		left: 50vw;
 	}
 }
 

@@ -159,18 +159,26 @@
 		display: grid;
 		grid-column-gap: 50px;
 		grid-row-gap: 50px;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		height: 100%;
 		margin: 50px auto;
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 	.musicCard {
 		height: 125px;
 		width: 125px;
 	}
 	.musicSection {
 		top: 390vh;
+	}
+	.musicContentsContainer {
+		display: grid;
+		grid-column-gap: 50px;
+		grid-row-gap: 50px;
+		grid-template-columns: repeat(2, 1fr);
+		height: 100%;
+		margin: 50px auto;
 	}
 }
