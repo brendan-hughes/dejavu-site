@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import logo from './logo.svg';
 import './App.css';
 import TagManager from 'react-gtm-module';
+import gtmScript from '../../scripts/gtmScript';
 
 const tagManagerArgs = {
 	gtmId: 'GTM-T7KC9D8',
@@ -18,6 +19,9 @@ const tagManagerArgs = {
 TagManager.initialize(tagManagerArgs);
 
 class App extends Component {
+	componentDidMount() {
+		gtmScript();
+	}
 	render() {
 		return (
 			<Provider store={store}>

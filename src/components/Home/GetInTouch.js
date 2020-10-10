@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './contact.css';
 import { connect } from 'react-redux';
 import { submitMessage } from '../../actions/contact';
+import TagManager from 'react-gtm-module';
 
 class GetInTouch extends Component {
 	constructor(props) {
@@ -20,12 +21,27 @@ class GetInTouch extends Component {
 	}
 	updateName(event) {
 		this.setState({ ...this.state, name: event.target.value });
+		TagManager.dataLayer({
+			dataLayer: {
+				contactName: 'true',
+			},
+		});
 	}
 	updateEmail(event) {
 		this.setState({ ...this.state, email: event.target.value });
+		TagManager.dataLayer({
+			dataLayer: {
+				contactEmail: 'true',
+			},
+		});
 	}
 	updateMessage(event) {
 		this.setState({ ...this.state, message: event.target.value });
+		TagManager.dataLayer({
+			dataLayer: {
+				contactMessage: 'true',
+			},
+		});
 	}
 	async handleSubmit() {
 		const state = this.state;
@@ -47,6 +63,11 @@ class GetInTouch extends Component {
 				message: '',
 				sent: true,
 				invalid: false,
+			});
+			TagManager.dataLayer({
+				dataLayer: {
+					contactSubmit: 'true',
+				},
 			});
 			setTimeout(() => {
 				this.setState({
