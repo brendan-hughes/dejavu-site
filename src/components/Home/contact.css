@@ -2,7 +2,7 @@
 	height: 70vh;
 	width: 100%;
 	position: absolute;
-	top: calc(570vh + 60px);
+	top: 590vh;
 	z-index: 1;
 	display: flex;
 	overflow: hidden;
