@@ -7,42 +7,58 @@ function gtmScript() {
 	let contactSection = document.querySelector('.contactSection');
 	let triggerImage = document.querySelector('.takeATripTriggerImageContainer');
 
+	let triggerOnce = false;
+	let bandOnce = false;
+	let musicOnce = false;
+	let showsOnce = false;
+	let contactOnce = false;
+
 	triggerImage.addEventListener('click', () => {
-		TagManager.dataLayer({
-			dataLayer: {
-				trigger: 'true',
-			},
-		});
+		if (!triggerOnce) {
+			TagManager.dataLayer({
+				dataLayer: {
+					trigger: 'true',
+				},
+			});
+		}
 	});
 
 	window.addEventListener('scroll', () => {
 		if (window.innerHeight >= bandSection.getBoundingClientRect().top) {
-			TagManager.dataLayer({
-				dataLayer: {
-					section: 'band',
-				},
-			});
+			if (!bandOnce) {
+				TagManager.dataLayer({
+					dataLayer: {
+						section: 'band',
+					},
+				});
+			}
 		}
 		if (window.innerHeight >= musicSection.getBoundingClientRect().top) {
-			TagManager.dataLayer({
-				dataLayer: {
-					section: 'music',
-				},
-			});
+			if (!musicOnce) {
+				TagManager.dataLayer({
+					dataLayer: {
+						section: 'music',
+					},
+				});
+			}
 		}
 		if (window.innerHeight >= showsSection.getBoundingClientRect().top) {
-			TagManager.dataLayer({
-				dataLayer: {
-					section: 'shows',
-				},
-			});
+			if (!showsOnce) {
+				TagManager.dataLayer({
+					dataLayer: {
+						section: 'shows',
+					},
+				});
+			}
 		}
 		if (window.innerHeight >= contactSection.getBoundingClientRect().top) {
-			TagManager.dataLayer({
-				dataLayer: {
-					section: 'contact',
-				},
-			});
+			if (!contactOnce) {
+				TagManager.dataLayer({
+					dataLayer: {
+						section: 'contact',
+					},
+				});
+			}
 		}
 	});
 }

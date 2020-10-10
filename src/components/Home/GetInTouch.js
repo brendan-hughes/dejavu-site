@@ -13,6 +13,9 @@ class GetInTouch extends Component {
 			message: '',
 			invalid: false,
 			sent: false,
+			startedName: false,
+			startedEmail: false,
+			startedMessage: false,
 		};
 		this.updateName = this.updateName.bind(this);
 		this.updateEmail = this.updateEmail.bind(this);
@@ -20,28 +23,37 @@ class GetInTouch extends Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 	updateName(event) {
+		if (!this.state.startedName) {
+			TagManager.dataLayer({
+				dataLayer: {
+					contactName: true,
+				},
+			});
+			this.setState({ ...this.state, startedName: true });
+		}
 		this.setState({ ...this.state, name: event.target.value });
-		TagManager.dataLayer({
-			dataLayer: {
-				contactName: 'true',
-			},
-		});
 	}
 	updateEmail(event) {
+		if (!this.state.startedEmail) {
+			TagManager.dataLayer({
+				dataLayer: {
+					contactEmail: true,
+				},
+			});
+			this.setState({ ...this.state, startedEmail: true });
+		}
 		this.setState({ ...this.state, email: event.target.value });
-		TagManager.dataLayer({
-			dataLayer: {
-				contactEmail: 'true',
-			},
-		});
 	}
 	updateMessage(event) {
+		if (!this.state.startedMessage) {
+			TagManager.dataLayer({
+				dataLayer: {
+					startedMessage: true,
+				},
+			});
+			this.setState({ ...this.state, startedMessage: true });
+		}
 		this.setState({ ...this.state, message: event.target.value });
-		TagManager.dataLayer({
-			dataLayer: {
-				contactMessage: 'true',
-			},
-		});
 	}
 	async handleSubmit() {
 		const state = this.state;
