@@ -154,7 +154,7 @@
 		height: 80vh;
 		width: 100%;
 		position: absolute;
-		top: calc(530vh + 60px);
+		top: calc(550vh);
 		display: flex;
 		flex-direction: column;
 		z-index: 1;
@@ -175,8 +175,9 @@
 @media screen and (max-width: 700px) {
 	.showTextContainer {
 		max-height: 90%;
-		max-width: 400px;
-		transform: translateY(-25%);
+		max-width: 350px;
+
+		margin-bottom: 50px;
 	}
 	.showsHeaderBackground {
 		display: none;

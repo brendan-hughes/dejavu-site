@@ -170,4 +170,7 @@
 		height: 125px;
 		width: 125px;
 	}
+	.musicSection {
+		top: 365vh;
+	}
 }

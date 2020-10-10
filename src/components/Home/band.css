@@ -7,7 +7,6 @@
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
 }
 .bandContentContainer {
 	display: grid;
@@ -253,5 +252,8 @@
 @media screen and (max-width: 700px) {
 	.normalBandBorder {
 		bottom: -120px;
+	}
+	.bandVideo {
+		height: 200px;
 	}
 }
