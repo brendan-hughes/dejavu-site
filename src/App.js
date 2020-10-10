@@ -8,6 +8,14 @@ import Footer from './components/Footer/Footer';
 
 import logo from './logo.svg';
 import './App.css';
+import TagManager from 'react-gtm-module';
+
+const tagManagerArgs = {
+	gtmId: 'GTM-T7KC9D8',
+	dataLayer: {},
+};
+
+TagManager.initialize(tagManagerArgs);
 
 class App extends Component {
 	render() {

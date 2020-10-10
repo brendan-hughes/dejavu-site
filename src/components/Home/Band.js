@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
 import './band.css';
+import gtmScript from '../../scripts/gtmScript';
 
 class Band extends Component {
+	componentDidMount() {
+		gtmScript();
+	}
+
 	render() {
 		return (
 			<section className="bandSection" id="band">
