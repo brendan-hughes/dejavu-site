@@ -143,6 +143,7 @@
 	}
 	.musicSection {
 		height: auto;
+		top: 400vh;
 	}
 	.musicCard {
 		height: 150px;
