@@ -5,11 +5,10 @@ import store from './store';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-
 import logo from './logo.svg';
 import './App.css';
 import TagManager from 'react-gtm-module';
-import gtmScript from '../../scripts/gtmScript';
+import gtmScript from './scripts/gtmScript';
 
 const tagManagerArgs = {
 	gtmId: 'GTM-T7KC9D8',
