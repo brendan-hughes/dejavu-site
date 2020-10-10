@@ -93,7 +93,7 @@
 }
 
 .getInTouchInput {
-	margin: auto;
+	margin: 2px auto;
 	padding: 5px;
 	width: 80%;
 	font-family: 'News Cycle', sans-serif;
@@ -117,7 +117,7 @@
 }
 
 .getInTouchTextArea {
-	margin: auto;
+	margin: 2px auto;
 	padding: 5px;
 	font-family: 'News Cycle', sans-serif;
 	width: 80%;
