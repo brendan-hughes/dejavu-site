@@ -116,7 +116,8 @@
 	text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
 	font-family: 'News Cycle', sans-serif;
 	font-weight: lighter;
-	font-size: 18px;
+	font-size: 20px;
+	padding: 0px 25px;
 }
 
 .meetTheBand {
@@ -214,7 +215,6 @@
 @media screen and (max-width: 1350px) {
 	.innerBand p {
 		margin: auto;
-		padding: 10px;
 	}
 	.bandBorderTop {
 		top: -50px;
@@ -242,13 +242,13 @@
 		margin: 350px auto 0px;
 	}
 	.bandSection {
-		height: auto;
+		height: 100vh;
 	}
 	.bandHeaderBackground {
 		display: none;
 	}
 	.normalBandBorder {
-		bottom: -350px;
+		bottom: -250px;
 	}
 }
 
@@ -262,5 +262,8 @@
 	.bandRight {
 		margin: 150px auto;
 		height: 600px;
+	}
+	.innerBand p {
+		font-size: 18px;
 	}
 }
