@@ -289,6 +289,14 @@
 		margin: 150px auto;
 		height: 600px;
 	}
+	.innerBand {
+		width: 90%;
+	}
+	.normalBandBorder {
+		width: 100%;
+		left: none;
+		transform: bottom(-100px);
+	}
 	.innerBandRight p {
 		font-size: 18px;
 	}
