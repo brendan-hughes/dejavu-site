@@ -53,7 +53,7 @@ class Band extends Component {
 						></img>
 					</div>
 					<div className="bandRight">
-						<div className="innerBand">
+						<div className="innerBandRight">
 							<h3 className="meetTheBand">Meet The Band</h3>
 							<hr></hr>
 							<p>
