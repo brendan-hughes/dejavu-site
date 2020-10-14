@@ -229,7 +229,7 @@
 	color: rgb(0, 109, 252);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
 	.contactHeaderBackground {
 		display: none;
 	}

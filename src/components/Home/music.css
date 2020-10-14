@@ -155,7 +155,7 @@
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
 	.musicContentsContainer {
 		display: grid;
 		grid-column-gap: 50px;

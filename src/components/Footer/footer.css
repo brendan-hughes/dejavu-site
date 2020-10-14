@@ -98,7 +98,7 @@ footer ul {
 	font-weight: lighter;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
 	footer {
 		top: calc(680vh + 60px);
 	}

@@ -149,7 +149,7 @@
 	/* animation: 5s headerrainbowtextshadow alternate infinite; */
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
 	.showsSection {
 		height: 80vh;
 		width: 100%;
