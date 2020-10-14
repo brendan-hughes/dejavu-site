@@ -27,7 +27,8 @@ function takeATripScript() {
 	const getInTouchBackground = document.querySelectorAll(
 		'.contactHeaderBackground'
 	);
-	const innerBand = document.querySelectorAll('.innerBand');
+	const innerBand = document.querySelector('.innerBand');
+	const innerBandRight = document.querySelector('.innerBandRight');
 	const bandBorderTop = document.querySelector('.bandBorderTop');
 	const bandBorderBottom = document.querySelector('.bandBorderBottom');
 	const normalBandBorder = document.querySelector('.normalBandBorder');
@@ -108,9 +109,9 @@ function takeATripScript() {
 		getInTouchBackground.forEach((background) => {
 			background.classList.add('addContactTrippyEffect');
 		});
-		innerBand.forEach((band) => {
-			band.classList.add('trippyCardBackground');
-		});
+		innerBand.classList.add('trippyCardBackground');
+		innerBandRight.classList.add('trippyCardBackground');
+
 		bandBorderTop.classList.add('visibleBorder');
 		bandBorderBottom.classList.add('visibleBorder');
 		normalBandBorder.classList.remove('visibleBorder');
@@ -182,9 +183,8 @@ function takeATripScript() {
 		getInTouchBackground.forEach((background) => {
 			background.classList.remove('addContactTrippyEffect');
 		});
-		innerBand.forEach((band) => {
-			band.classList.remove('trippyCardBackground');
-		});
+		innerBand.classList.remove('trippyCardBackground');
+		innerBandRight.classList.remove('trippyCardBackground');
 		bandBorderTop.classList.remove('visibleBorder');
 		bandBorderBottom.classList.remove('visibleBorder');
 		normalBandBorder.classList.add('visibleBorder');
