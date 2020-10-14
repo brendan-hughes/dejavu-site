@@ -273,9 +273,6 @@
 		margin: 350px auto 0px;
 		height: 100%;
 	}
-	.bandSection {
-		height: 100vh;
-	}
 	.bandHeaderBackground {
 		display: none;
 	}
@@ -285,6 +282,10 @@
 }
 
 @media screen and (max-width: 1050px) {
+	.bandSection {
+		top: 1980px;
+		height: 768px;
+	}
 	.bandVideo {
 		height: 200px;
 	}

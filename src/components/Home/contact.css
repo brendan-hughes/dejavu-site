@@ -234,10 +234,10 @@
 		display: none;
 	}
 	.contactSection {
-		height: 70vh;
+		height: 538px;
 		width: 100%;
 		position: absolute;
-		top: 595vh;
+		top: 4288px;
 		z-index: 1;
 		display: flex;
 		overflow: hidden;

@@ -141,10 +141,7 @@
 		height: 100%;
 		margin: 30px 150px;
 	}
-	.musicSection {
-		height: auto;
-		top: 400vh;
-	}
+
 	.musicCard {
 		height: 150px;
 		width: 150px;
@@ -156,6 +153,10 @@
 }
 
 @media screen and (max-width: 1050px) {
+	.musicSection {
+		height: 925px;
+		top: 2748px;
+	}
 	.musicContentsContainer {
 		display: grid;
 		grid-column-gap: 50px;

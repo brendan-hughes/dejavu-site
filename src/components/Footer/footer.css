@@ -1,6 +1,6 @@
 footer {
 	position: absolute;
-	top: 690vh;
+	bottom: 0px;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -96,16 +96,4 @@ footer ul {
 	font-size: 13px;
 	font-family: 'News Cycle', sans-serif;
 	font-weight: lighter;
-}
-
-@media screen and (max-width: 1050px) {
-	footer {
-		top: calc(680vh + 60px);
-	}
-}
-
-@media screen and (max-width: 700px) {
-	footer {
-		top: 695vh;
-	}
 }

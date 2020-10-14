@@ -151,7 +151,8 @@
 
 @media screen and (max-width: 1050px) {
 	.showsSection {
-		height: 80vh;
+		top: 3673px;
+		height: 615px;
 		width: 100%;
 		position: absolute;
 		top: 520vh;

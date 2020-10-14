@@ -747,7 +747,10 @@ Burgundy rgba(96,76,81,1)*/
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
+	.homeSection {
+		height: 1980px;
+	}
 	.dejaVuHeader {
 		font-size: 75px;
 	}
