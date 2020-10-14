@@ -37,8 +37,8 @@
 .innerBandRight {
 	background-image: linear-gradient(rgb(235, 235, 235), rgba(200, 200, 200, 1));
 	border: 10px solid rgb(133, 83, 74);
-	height: 360px;
-	width: 640px;
+	width: 90%;
+	height: 100%;
 	margin: auto;
 	border-radius: 100px;
 	transition: 1s ease;
@@ -239,7 +239,8 @@
 		);
 		border: 10px solid rgb(133, 83, 74);
 		width: 90%;
-		margin: auto;
+		height: 100%;
+		margin: 0px auto auto;
 		border-radius: 100px;
 		transition: 1s ease;
 		box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -247,17 +248,6 @@
 		z-index: 0;
 		position: relative;
 	}
-	.normalBandBorder {
-		position: absolute;
-		width: 110%;
-		opacity: 0;
-		transition: 0.5s ease;
-		pointer-events: none;
-		left: 50%;
-		transform: translate(-50%);
-		bottom: -30%;
-	}
-	.innerBand p,
 	.innerBandRight p {
 		margin: auto;
 		padding: 0px 25px;
@@ -285,6 +275,7 @@
 	}
 	.bandRight {
 		margin: 350px auto 0px;
+		height: 100%;
 	}
 	.bandSection {
 		height: 100vh;
