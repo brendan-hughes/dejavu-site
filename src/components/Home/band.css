@@ -70,7 +70,7 @@
 
 .bandBorderBottom {
 	position: absolute;
-	width: 00%;
+	width: 50%;
 	bottom: 0%;
 	right: 0%;
 	opacity: 0;
@@ -80,17 +80,11 @@
 
 .bandBorderTop {
 	position: absolute;
-	width: 0%;
+	width: 50%;
 	transition: 0.5s ease;
 	opacity: 0;
 	pointer-events: none;
 }
-
-.visibleBorder {
-	opacity: 1;
-	width: 50%;
-}
-
 .normalBandBorder {
 	position: absolute;
 	width: 700px;
@@ -101,6 +95,10 @@
 	transform: translate(-350px);
 	bottom: -200px;
 }
+.visibleBorder {
+	opacity: 1;
+}
+
 .trippyCardBackground {
 	background: rgba(255, 255, 255, 0.822);
 	border: 10px solid rgba(255, 255, 255, 0.089);
@@ -237,7 +235,7 @@
 		);
 		border: 10px solid rgb(133, 83, 74);
 		width: 90%;
-		height: 80%;
+		height: 100%;
 		margin: 0px auto auto;
 		border-radius: 100px;
 		transition: 1s ease;
@@ -280,11 +278,6 @@
 	}
 	.bandHeaderBackground {
 		display: none;
-	}
-	.normalBandBorder {
-		width: 100%;
-		transform: translate(-50%);
-		bottom: -100px;
 	}
 }
 
