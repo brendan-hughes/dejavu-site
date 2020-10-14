@@ -183,10 +183,9 @@
 		display: none;
 	}
 	.showsSection {
-		height: 80vh;
 		width: 100%;
 		position: absolute;
-		top: 550vh;
+		top: 555vh;
 		display: flex;
 		flex-direction: column;
 		z-index: 1;
