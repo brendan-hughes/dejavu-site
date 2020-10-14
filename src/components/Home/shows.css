@@ -151,11 +151,10 @@
 
 @media screen and (max-width: 1050px) {
 	.showsSection {
-		top: 3673px;
-		height: 615px;
+		height: 80vh;
 		width: 100%;
 		position: absolute;
-		top: 520vh;
+		top: 500vh;
 		display: flex;
 		flex-direction: column;
 		z-index: 1;
