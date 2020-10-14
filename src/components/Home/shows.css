@@ -1,8 +1,8 @@
 .showsSection {
-	height: 80vh;
+	height: 85vh;
 	width: 100%;
 	position: absolute;
-	top: 515vh;
+	top: 525vh;
 	display: flex;
 	flex-direction: column;
 	z-index: 1;
