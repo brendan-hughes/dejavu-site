@@ -48,7 +48,7 @@ class Band extends Component {
 							src={require('../../assets/new/psyc-bottom-border.svg')}
 						></img>
 						<img
-							className="normalBandBorder visibleBorder normaBorderWidth"
+							className="normalBandBorder visibleBorder "
 							src={require('../../assets/new/70s-border.svg')}
 						></img>
 					</div>
