@@ -294,8 +294,43 @@
 	}
 	.normalBandBorder {
 		width: 100%;
-		left: none;
-		transform: bottom(-100px);
+		transform: translate(-50%);
+	}
+	.innerBandRight p {
+		font-size: 18px;
+	}
+	.innerBandRight {
+		background-image: linear-gradient(
+			rgb(235, 235, 235),
+			rgba(200, 200, 200, 1)
+		);
+		border: 10px solid rgb(133, 83, 74);
+		width: 90%;
+		height: 100%;
+		margin: 0px auto auto;
+		border-radius: 100px;
+		transition: 1s ease;
+		box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+		overflow: hidden;
+		z-index: 0;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.bandVideo {
+		height: 200px;
+	}
+	.bandRight {
+		margin: 150px auto;
+		height: 600px;
+	}
+	.innerBand {
+		width: 90%;
+	}
+	.normalBandBorder {
+		width: 100%;
+		transform: translate(-50%, -100px);
 	}
 	.innerBandRight p {
 		font-size: 18px;
