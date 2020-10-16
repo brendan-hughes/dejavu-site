@@ -172,9 +172,11 @@
 		height: 125px;
 		width: 125px;
 	}
+
 	.musicSection {
 		top: 410vh;
 	}
+
 	.musicContentsContainer {
 		display: grid;
 		grid-column-gap: 50px;
