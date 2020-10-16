@@ -155,7 +155,7 @@
 @media screen and (max-width: 1050px) {
 	.musicSection {
 		height: auto;
-		top: 400vh;
+		top: 405vh;
 	}
 	.musicContentsContainer {
 		display: grid;
